@@ -55,7 +55,7 @@ jobs:
           script: |
             docker pull dhaval26/nodejs-app:latest
             docker stop nodejs-app || true && docker rm nodejs-app || true
-            docker run -d --name myapp -p 3033:3033 dhaval26/nodejs-app:latest 
+            docker run -d --name nodejs-app -p 3033:3033 dhaval26/nodejs-app:latest 
     
 
 
