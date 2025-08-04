@@ -1,0 +1,12 @@
+{
+  "name": "node-cicd",
+  "version": "1.0.0",
+  "description": "GitHub Actions CI/CD",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \\\"No tests yet\\\" && exit 0",
+    "start": "node server.js"
+  },
+  "author": "Dhaval Chhayla",
+  "license": "ISC"
+}
