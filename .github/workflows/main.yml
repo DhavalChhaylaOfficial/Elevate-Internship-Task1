@@ -55,7 +55,7 @@ jobs:
           script: |
             docker pull ${{ secrets.DOCKER_USERNAME }}/my-node-app:latest
             docker stop myapp || true && docker rm myapp || true
-            docker run -d --name myapp -p 3033:3033 ${{ secrets.DOCKER_USERNAME }}/my-node-app:latest 
+            docker run -d --name myapp -p 3033:3033 dhaval26/my-node-app:latest 
     
 
 
