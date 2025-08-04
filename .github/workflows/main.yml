@@ -33,13 +33,13 @@ jobs:
 
       - name: Build Docker image
         run: |
-          IMAGE= dhaval26/nodejs-app
+          IMAGE=dhaval26/nodejs-app
           docker build -t $IMAGE:${{ github.sha }} .
           docker tag $IMAGE:${{ github.sha }} $IMAGE:latest
 
       - name: Push Docker images
         run: |
-          IMAGE= dhaval26/nodejs-app
+          IMAGE=dhaval26/nodejs-app
           docker push $IMAGE:${{ github.sha }}
           docker push $IMAGE:latest
 
